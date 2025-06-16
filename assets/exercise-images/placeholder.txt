@@ -1,0 +1,23 @@
+# Pasta para Imagens dos Exercícios
+
+Esta pasta deve conter as imagens estáticas dos exercícios no formato:
+- barbell-bench-press.jpg
+- incline-barbell-bench-press.jpg
+- dumbbell-bench-press.jpg
+- dumbbell-flyes.jpg
+- push-ups.jpg
+- pull-ups.jpg
+- deadlift.jpg
+- bent-over-row.jpg
+- barbell-squat.jpg
+- leg-press.jpg
+- military-press.jpg
+- lateral-raise.jpg
+- barbell-curl.jpg
+- hammer-curl.jpg
+- tricep-pushdown.jpg
+- plank.jpg
+- crunches.jpg
+
+Formato recomendado: JPG ou PNG, 800x600px ou similar
+Fonte sugerida: Unsplash, Pexels ou criação própria 

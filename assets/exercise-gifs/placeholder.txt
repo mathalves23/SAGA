@@ -1,0 +1,29 @@
+# Pasta para GIFs/Animações dos Exercícios
+
+Esta pasta deve conter as animações dos exercícios no formato:
+- barbell-bench-press.gif
+- incline-barbell-bench-press.gif
+- dumbbell-bench-press.gif
+- dumbbell-flyes.gif
+- push-ups.gif
+- pull-ups.gif
+- deadlift.gif
+- bent-over-row.gif
+- barbell-squat.gif
+- leg-press.gif
+- military-press.gif
+- lateral-raise.gif
+- barbell-curl.gif
+- hammer-curl.gif
+- tricep-pushdown.gif
+- plank.gif
+- crunches.gif
+
+Formato: GIF animado
+Tamanho recomendado: 400x400px, máximo 2MB por arquivo
+Duração: 2-4 segundos em loop
+
+Fontes sugeridas:
+- Jefit Exercise Database
+- Bodybuilding.com
+- Criação própria com ferramentas como Figma ou After Effects 

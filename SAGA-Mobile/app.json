@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "SAGA Fitness",
+    "slug": "saga-fitness",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6366f1"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.saga.fitness",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SAGA usa a câmera para análise de movimento e progresso visual dos exercícios.",
+        "NSMicrophoneUsageDescription": "SAGA usa o microfone para comandos de voz durante os treinos.",
+        "NSLocationWhenInUseUsageDescription": "SAGA usa sua localização para encontrar academias próximas e trilhas de corrida.",
+        "NSHealthShareUsageDescription": "SAGA compartilha dados de saúde para integração com Apple Health e melhor acompanhamento do seu progresso.",
+        "NSHealthUpdateUsageDescription": "SAGA atualiza dados de saúde para manter seu progresso sincronizado com Apple Health.",
+        "NSMotionUsageDescription": "SAGA usa sensores de movimento para contar passos e detectar atividades físicas automaticamente."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6366f1"
+      },
+      "package": "com.saga.fitness",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACTIVITY_RECOGNITION",
+        "BODY_SENSORS",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-notifications",
+      "expo-location",
+      "expo-camera",
+      "expo-av",
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.0"
+          },
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 21
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    },
+    "owner": "saga-team",
+    "privacy": "public",
+    "scheme": "saga-fitness",
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#6366f1",
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "SAGA Fitness"
+    }
+  }
+}
