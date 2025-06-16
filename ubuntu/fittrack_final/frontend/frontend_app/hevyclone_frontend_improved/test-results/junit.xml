@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="86" failures="0" errors="0" time="5.383">
+    <testsuite name="src/__tests__/App.test.tsx" timestamp="2025-06-08T01:13:30.042Z" hostname="BR0C02HD0GJ0KPF" tests="2" failures="0" errors="0" skipped="0" time="0.044250958">
+        <testcase classname="src/__tests__/App.test.tsx" name="App Component &gt; renders without crashing" time="0.038737">
+        </testcase>
+        <testcase classname="src/__tests__/App.test.tsx" name="App Component &gt; should render login page when not authenticated" time="0.004536959">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/Button.test.tsx" timestamp="2025-06-08T01:13:30.042Z" hostname="BR0C02HD0GJ0KPF" tests="13" failures="0" errors="0" skipped="0" time="0.208745459">
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render button with text" time="0.095400333">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should call onClick when clicked" time="0.019371083">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should not call onClick when disabled" time="0.013369875">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render with primary variant by default" time="0.005375208">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render with secondary variant" time="0.006787875">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render with danger variant" time="0.003998459">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render with different sizes" time="0.014042459">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should apply custom className" time="0.004962125">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render as submit button when type is submit" time="0.015602">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should have proper accessibility attributes" time="0.013968208">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should show disabled state visually" time="0.003736042">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should handle keyboard events" time="0.004429583">
+        </testcase>
+        <testcase classname="src/__tests__/components/Button.test.tsx" name="Button Component &gt; should render with loading state" time="0.005235125">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/ErrorBoundary.test.tsx" timestamp="2025-06-08T01:13:30.043Z" hostname="BR0C02HD0GJ0KPF" tests="7" failures="0" errors="0" skipped="0" time="0.155685584">
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should render children when there is no error" time="0.0281325">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should render error UI when child component throws error" time="0.083511625">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should call window.location.reload when reload button is clicked" time="0.014511916">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should log error to console when error occurs" time="0.004723875">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should have correct CSS classes for error UI" time="0.011130167">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should handle multiple errors gracefully" time="0.0054565">
+        </testcase>
+        <testcase classname="src/__tests__/components/ErrorBoundary.test.tsx" name="ErrorBoundary &gt; should maintain error state after re-render" time="0.006428833">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/components/LoadingSpinner.test.tsx" timestamp="2025-06-08T01:13:30.044Z" hostname="BR0C02HD0GJ0KPF" tests="8" failures="0" errors="0" skipped="0" time="0.072549583">
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should render loading spinner" time="0.045072">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should have correct accessibility attributes" time="0.00579725">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should render with custom size when provided" time="0.005109583">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should render with custom color when provided" time="0.003034916">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should have proper CSS classes for styling" time="0.003758083">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should render with default size and color" time="0.003792083">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should apply custom className" time="0.00241325">
+        </testcase>
+        <testcase classname="src/__tests__/components/LoadingSpinner.test.tsx" name="LoadingSpinner &gt; should have screen reader text" time="0.001891916">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/hooks/useDebounce.test.ts" timestamp="2025-06-08T01:13:30.044Z" hostname="BR0C02HD0GJ0KPF" tests="8" failures="0" errors="0" skipped="0" time="0.042797">
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should return initial value immediately" time="0.012319834">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should debounce value changes" time="0.004098167">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should reset timer when value changes before delay completes" time="0.006562625">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should handle multiple rapid changes" time="0.00374">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should work with different data types" time="0.006479458">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should handle delay changes" time="0.003387292">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should handle zero delay" time="0.002830834">
+        </testcase>
+        <testcase classname="src/__tests__/hooks/useDebounce.test.ts" name="useDebounce &gt; should cleanup timer on unmount" time="0.00145725">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/integration/AuthFlow.test.tsx" timestamp="2025-06-08T01:13:30.045Z" hostname="BR0C02HD0GJ0KPF" tests="6" failures="0" errors="0" skipped="0" time="0.229875375">
+        <testcase classname="src/__tests__/integration/AuthFlow.test.tsx" name="Fluxo de Autenticação - Integração &gt; deve realizar fluxo completo de login com sucesso" time="0.151424875">
+        </testcase>
+        <testcase classname="src/__tests__/integration/AuthFlow.test.tsx" name="Fluxo de Autenticação - Integração &gt; deve exibir erro quando login falha" time="0.015284166">
+        </testcase>
+        <testcase classname="src/__tests__/integration/AuthFlow.test.tsx" name="Fluxo de Autenticação - Integração &gt; deve realizar logout e limpar estado" time="0.017732625">
+        </testcase>
+        <testcase classname="src/__tests__/integration/AuthFlow.test.tsx" name="Fluxo de Autenticação - Integração &gt; deve manter estado durante interações múltiplas" time="0.014988583">
+        </testcase>
+        <testcase classname="src/__tests__/integration/AuthFlow.test.tsx" name="Fluxo de Autenticação - Integração &gt; deve validar campos obrigatórios antes de submeter" time="0.0104575">
+        </testcase>
+        <testcase classname="src/__tests__/integration/AuthFlow.test.tsx" name="Fluxo de Autenticação - Integração &gt; deve lidar com múltiplos estados de erro" time="0.018293417">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/integration/UserWorkoutFlow.test.tsx" timestamp="2025-06-08T01:13:30.045Z" hostname="BR0C02HD0GJ0KPF" tests="5" failures="0" errors="0" skipped="0" time="1.788406833">
+        <testcase classname="src/__tests__/integration/UserWorkoutFlow.test.tsx" name="Fluxo de Treinos - Integração &gt; deve criar treino completo com exercícios e séries" time="0.392069375">
+        </testcase>
+        <testcase classname="src/__tests__/integration/UserWorkoutFlow.test.tsx" name="Fluxo de Treinos - Integração &gt; deve navegar entre lista e detalhes do treino" time="0.192726208">
+        </testcase>
+        <testcase classname="src/__tests__/integration/UserWorkoutFlow.test.tsx" name="Fluxo de Treinos - Integração &gt; deve manter consistência de dados durante operações múltiplas" time="0.812044459">
+        </testcase>
+        <testcase classname="src/__tests__/integration/UserWorkoutFlow.test.tsx" name="Fluxo de Treinos - Integração &gt; deve lidar com múltiplos exercícios no mesmo treino" time="0.269980292">
+        </testcase>
+        <testcase classname="src/__tests__/integration/UserWorkoutFlow.test.tsx" name="Fluxo de Treinos - Integração &gt; deve exibir estados de loading durante operações" time="0.120025709">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/services/api.test.ts" timestamp="2025-06-08T01:13:30.046Z" hostname="BR0C02HD0GJ0KPF" tests="7" failures="0" errors="0" skipped="0" time="0.006592666">
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; GET requests &gt; should make successful GET request" time="0.001682208">
+        </testcase>
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; GET requests &gt; should handle GET request with parameters" time="0.000527167">
+        </testcase>
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; GET requests &gt; should handle GET request errors" time="0.000972083">
+        </testcase>
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; POST requests &gt; should make successful POST request" time="0.000332459">
+        </testcase>
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; File Upload &gt; should upload file with progress callback" time="0.000891833">
+        </testcase>
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; Health Check &gt; should return true for successful health check" time="0.000229834">
+        </testcase>
+        <testcase classname="src/__tests__/services/api.test.ts" name="ApiService &gt; Health Check &gt; should return false for failed health check" time="0.000222083">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/services/userService.test.ts" timestamp="2025-06-08T01:13:30.046Z" hostname="BR0C02HD0GJ0KPF" tests="10" failures="0" errors="0" skipped="0" time="0.011086">
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Profile Management &gt; should get current user successfully" time="0.0014105">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Profile Management &gt; should handle error when getting current user" time="0.002039">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Profile Management &gt; should update user profile successfully" time="0.001976209">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Preferences &gt; should get user preferences" time="0.000643167">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Preferences &gt; should update user preferences" time="0.000314833">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Stats &gt; should get user statistics" time="0.00028125">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Validation &gt; should validate email availability" time="0.0004065">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Validation &gt; should validate username availability" time="0.0002425">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; User Validation &gt; should validate user data" time="0.000434542">
+        </testcase>
+        <testcase classname="src/__tests__/services/userService.test.ts" name="UserService &gt; File Upload &gt; should upload profile image" time="0.000823917">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/utils/validation.test.ts" timestamp="2025-06-08T01:13:30.047Z" hostname="BR0C02HD0GJ0KPF" tests="20" failures="0" errors="0" skipped="0" time="0.019925">
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should validate required fields" time="0.001846417">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should validate minLength" time="0.00038525">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should validate maxLength" time="0.000247333">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should validate pattern" time="0.000253458">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should validate custom rules" time="0.000229125">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should combine multiple validation rules" time="0.001400833">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateField &gt; should handle non-required empty fields" time="0.000518084">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateForm &gt; should validate entire form" time="0.001016084">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; validateForm &gt; should return errors for invalid form" time="0.001071167">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; email &gt; should validate email addresses" time="0.00081725">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; password &gt; should validate strong passwords" time="0.001243708">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; name &gt; should validate names" time="0.00119075">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; phone &gt; should validate phone numbers" time="0.001301625">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; weight &gt; should validate weight values" time="0.000476458">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; height &gt; should validate height values" time="0.000699209">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; ValidationRules &gt; age &gt; should validate age values" time="0.000270375">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; isValidEmail &gt; should validate email addresses" time="0.000157209">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; isStrongPassword &gt; should validate password strength" time="0.000294208">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; getPasswordStrength &gt; should return password strength score and label" time="0.000725334">
+        </testcase>
+        <testcase classname="src/__tests__/utils/validation.test.ts" name="Validation Utils &gt; getPasswordStrength &gt; should return appropriate colors for different strengths" time="0.000390958">
+        </testcase>
+    </testsuite>
+</testsuites>

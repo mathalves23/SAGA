@@ -1,0 +1,7 @@
+com/hevyclone/app/unit/AuthServiceTest.class
+com/hevyclone/app/integration/SocialIntegrationTest.class
+com/hevyclone/app/integration/AuthIntegrationTest.class
+com/hevyclone/app/integration/WorkoutIntegrationTest.class
+com/hevyclone/app/HevycloneAppApplicationTests.class
+com/hevyclone/app/unit/AuthControllerTest$1.class
+com/hevyclone/app/unit/AuthControllerTest.class

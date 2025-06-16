@@ -1,0 +1,12 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#8B5CF6"/>
+  <circle cx="200" cy="120" r="40" fill="white" fill-opacity="0.2"/>
+  <rect x="160" y="140" width="80" height="60" rx="8" fill="white" fill-opacity="0.2"/>
+  <rect x="180" y="200" width="40" height="40" rx="4" fill="white" fill-opacity="0.2"/>
+  <text x="200" y="260" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    Exercício
+  </text>
+  <text x="200" y="280" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" opacity="0.8">
+    Imagem em breve
+  </text>
+</svg> 

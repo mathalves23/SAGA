@@ -1,0 +1,172 @@
+# ========================
+# SPRING CONFIGURATION
+# ========================
+spring:
+  application:
+    name: saga-app
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 120000
+      connection-timeout: 30000
+      leak-detection-threshold: 60000
+      # Configurações de segurança da conexão
+      connection-init-sql: "SET SESSION sql_mode='STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO'"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+        # Configurações de segurança do Hibernate
+        connection.provider_disables_autocommit: true
+        jdbc.batch_size: 20
+        order_inserts: true
+        order_updates: true
+        batch_versioned_data: true
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000
+      cache-null-values: false
+  # Configurações de segurança da sessão
+  session:
+    store-type: redis
+    redis:
+      cleanup-cron: "0 */15 * * * *"
+      flush-mode: on_save
+      save-mode: on_set_attribute
+
+# ========================
+# SERVER CONFIGURATION
+# ========================
+server:
+  port: ${SERVER_PORT:8080}
+  # Configurações de segurança do servidor
+  error:
+    include-message: never
+    include-binding-errors: never
+    include-stacktrace: never
+    include-exception: false
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
+    min-response-size: 1024
+  tomcat:
+    max-threads: 200
+    max-connections: 10000
+    connection-timeout: 20000
+    # Configurações de segurança do Tomcat
+    remoteip:
+      internal-proxies: 10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|169\.254\.\d{1,3}\.\d{1,3}|127\.\d{1,3}\.\d{1,3}\.\d{1,3}|172\.1[6-9]{1}\.\d{1,3}\.\d{1,3}|172\.2[0-9]{1}\.\d{1,3}\.\d{1,3}|172\.3[0-1]{1}\.\d{1,3}\.\d{1,3}
+      remote-ip-header: x-forwarded-for
+      protocol-header: x-forwarded-proto
+  # Headers de segurança
+  servlet:
+    session:
+      timeout: 30m
+      cookie:
+        secure: true
+        http-only: true
+        same-site: strict
+
+# ========================
+# LOGGING
+# ========================
+logging:
+  level:
+    org.springframework: WARN
+    org.springframework.security: WARN
+    com.saga: INFO
+    # Logs de segurança
+    org.springframework.security.web.access: DEBUG
+    org.springframework.security.authentication: DEBUG
+  file:
+    name: ${LOG_FILE_PATH:/var/log/saga/application.log}
+    max-size: 10MB
+    max-history: 30
+  pattern:
+    # Pattern com informações de segurança
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{userId}] %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{userId}] %logger{36} - %msg%n"
+
+# ========================
+# JWT CONFIG
+# ========================
+jwt:
+  secret: ${JWT_SECRET}
+  expiration-ms: ${JWT_EXPIRATION_MS:3600000}
+  # Configurações avançadas de segurança JWT
+  issuer: "SAGA-APP"
+  algorithm: "HS256"
+  refresh-expiration-ms: ${JWT_REFRESH_EXPIRATION_MS:604800000}
+  max-refresh-count: 5
+
+# ========================
+# CORS CONFIGURATION
+# ========================
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGINS:https://saga.com}
+  allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
+  allowed-headers: "Content-Type,Authorization,X-Requested-With,Accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  exposed-headers: "Access-Control-Allow-Origin,Access-Control-Allow-Credentials"
+  allow-credentials: true
+  max-age: 3600
+
+# ========================
+# ACTUATOR & MONITORING
+# ========================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: when-authorized
+      show-components: when-authorized
+    metrics:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+      percentiles:
+        http.server.requests: 0.5, 0.95, 0.99
+  security:
+    enabled: true
+
+# ========================
+# RATE LIMITING
+# ========================
+rate-limit:
+  enabled: true
+  default-limit: 1000
+  default-duration: 3600
+  login-limit: 5
+  login-duration: 900
+
+# ========================
+# SECURITY HEADERS
+# ========================
+security:
+  headers:
+    content-security-policy: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://api.saga.com"
+    frame-options: "DENY"
+    content-type-options: "nosniff"
+    xss-protection: "1; mode=block"
+    referrer-policy: "strict-origin-when-cross-origin"
+    hsts-max-age: 31536000
+    hsts-include-subdomains: true
+    permissions-policy: "geolocation=(), microphone=(), camera=()"

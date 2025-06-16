@@ -1,0 +1,203 @@
+{
+  "name": "SAGA Fitness - Transforme seu corpo, transforme sua vida",
+  "short_name": "SAGA Fitness",
+  "description": "Aplicativo completo de fitness com treinos personalizados, acompanhamento de progresso e comunidade ativa. Funciona offline!",
+  "version": "2.0.0",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#3b82f6",
+  "background_color": "#0f172a",
+  "categories": ["health", "fitness", "lifestyle", "productivity"],
+  "lang": "pt-BR",
+  
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "name": "Novo Treino",
+      "short_name": "Treino",
+      "description": "Iniciar um novo treino rapidamente",
+      "url": "/workout/start",
+      "icons": [
+        {
+          "src": "/icons/shortcut-workout.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Exercícios",
+      "short_name": "Exercícios",
+      "description": "Explorar biblioteca de exercícios",
+      "url": "/exercises",
+      "icons": [
+        {
+          "src": "/icons/shortcut-exercises.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Progresso",
+      "short_name": "Progresso",
+      "description": "Ver estatísticas de progresso",
+      "url": "/progress",
+      "icons": [
+        {
+          "src": "/icons/shortcut-progress.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Perfil",
+      "short_name": "Perfil",
+      "description": "Acessar perfil e configurações",
+      "url": "/profile",
+      "icons": [
+        {
+          "src": "/icons/shortcut-profile.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tela inicial do SAGA Fitness no desktop"
+    },
+    {
+      "src": "/screenshots/mobile-workout.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Interface de treino no mobile"
+    },
+    {
+      "src": "/screenshots/mobile-exercises.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Biblioteca de exercícios"
+    },
+    {
+      "src": "/screenshots/mobile-progress.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Acompanhamento de progresso"
+    }
+  ],
+  
+  "protocol_handlers": [
+    {
+      "protocol": "web+saga",
+      "url": "/share?url=%s"
+    }
+  ],
+  
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.saga.fitness",
+      "id": "com.saga.fitness"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/saga-fitness/id123456789"
+    }
+  ],
+  
+  "file_handlers": [
+    {
+      "action": "/import",
+      "accept": {
+        "application/json": [".json"],
+        "text/csv": [".csv"]
+      }
+    }
+  ],
+  
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
+} 

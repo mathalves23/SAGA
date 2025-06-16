@@ -1,0 +1,67 @@
+/* Estilos específicos para a página de registro de treino */
+.workout-logging {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Corrigir problema do header sobrepondo conteúdo */
+.pt-20 {
+  padding-top: 5rem !important;
+}
+
+.pt-24 {
+  padding-top: 6rem !important;
+}
+
+/* Melhorar visualização em dispositivos móveis */
+@media (max-width: 640px) {
+  .workout-logging table {
+    font-size: 0.875rem;
+  }
+  
+  .workout-logging input[type="number"] {
+    width: 3rem;
+  }
+}
+
+/* Animações para feedback visual */
+@keyframes highlight {
+  0% {
+    background-color: rgba(94, 96, 206, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.set-completed {
+  animation: highlight 1s ease-out;
+}
+
+/* Melhorar visualização de inputs */
+.input:focus {
+  border-color: #5e60ce;
+  box-shadow: 0 0 0 2px rgba(94, 96, 206, 0.2);
+}
+
+/* Estilos para o timer */
+.timer-display {
+  font-family: monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Melhorar visualização de botões */
+.btn-primary {
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
