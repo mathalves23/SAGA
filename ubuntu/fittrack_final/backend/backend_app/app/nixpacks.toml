@@ -2,7 +2,7 @@
 nixPkgs = ['...', 'maven']
 
 [phases.build]
-cmds = ['mvn clean package -DskipTests -Dmaven.repo.local=/tmp/m2']
+cmds = ['mvn clean package -DskipTests']
 
 [phases.start]
 cmd = 'find target -name "*.jar" -exec java -Dspring.profiles.active=railway -jar {} \;'
