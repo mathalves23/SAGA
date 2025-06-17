@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ['...', 'maven']
+
+[phases.build]
+cmds = ['./mvnw clean package -DskipTests -Dmaven.repo.local=/tmp/m2']
+
+[phases.start]
+cmd = 'java -Dspring.profiles.active=railway -jar target/*.jar'
+
+[variables]
+MAVEN_OPTS = '-Xmx1024m' 
