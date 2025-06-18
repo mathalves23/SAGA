@@ -27,9 +27,14 @@ const SettingsPage = React.lazy(() => import('./pages/settings/SettingsPage'));
 
 // AI and Analytics pages
 const AnalyticsPage = React.lazy(() => import('./pages/analytics/AnalyticsPage'));
+const AnalyticsDashboard = React.lazy(() => import('./pages/analytics/AnalyticsDashboard'));
 const CoachPage = React.lazy(() => import('./pages/coach/CoachPage'));
 const AIPage = React.lazy(() => import('./pages/ai/AIPage'));
+const AICoachPage = React.lazy(() => import('./pages/ai/AICoachPage'));
 const RewardsPage = React.lazy(() => import('./pages/rewards/RewardsPage'));
+const GamificationPage = React.lazy(() => import('./pages/gamification/GamificationPage'));
+const NutritionPage = React.lazy(() => import('./pages/nutrition/NutritionPage'));
+const NotificationsPage = React.lazy(() => import('./pages/notifications/NotificationsPage'));
 
 // Loading component
 const PageLoader: React.FC = () => (
@@ -115,9 +120,14 @@ const AppRoutes: React.FC = () => {
           <Route path="profile" element={<ProfilePage />} />
           <Route path="settings" element={<SettingsPage />} />
           <Route path="analytics" element={<AnalyticsPage />} />
+          <Route path="analytics/dashboard" element={<AnalyticsDashboard />} />
           <Route path="coach" element={<CoachPage />} />
           <Route path="ai" element={<AIPage />} />
+          <Route path="ai/coach" element={<AICoachPage />} />
           <Route path="rewards" element={<RewardsPage />} />
+          <Route path="gamification" element={<GamificationPage />} />
+          <Route path="nutrition" element={<NutritionPage />} />
+          <Route path="notifications" element={<NotificationsPage />} />
           <Route index element={<Navigate to="/feed" replace />} />
         </Route>
       </Routes>
